@@ -6,9 +6,9 @@ This script converts a CSS stylesheet file to a SASS file for the [Rails Asset P
 Usage
 -----
 
-To use the file, you need to download it and set its permissions to 755.  You can do this from the terminal using `sudo chmod 755 sassify.sh`.  You can now run the following command to sassify a file.
+To use the file, you need to download it and set its permissions to 755.  You can do this from the terminal using `sudo chmod 755 lib/sassify`.  You can now run the following command to sassify a file.
 
-`./sassify.sh <substitute-path> <with-path> <css-file-path>`
+`./lib/sassify <substitute-path> <with-path> <css-file-path>`
 
 Once it is complete, you will have a new file with the extension `.css.scss`.
 
