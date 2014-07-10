@@ -1,0 +1,6 @@
+div.button span {
+background-image: url('../img/uniform/single_quotes.png');
+}
+div.button span.tester {
+background-image: url('../../img/uniform/single_tester.png');
+}
