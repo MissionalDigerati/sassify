@@ -45,6 +45,18 @@ describe "Sassify" do
     expect(actual.delete!("\n")).to eq(expected_content)
   end
 
+  it "should generate the correct syntax if it has double quotes and has no relative pathing" do
+    expected_content = 'div.button span {'
+    expected_content += 'background-image: asset-url("test/uniform/double_quote.png");'
+    expected_content += '}'
+    test_file = File.join(@test_css_dir, 'double_quotes_no_path.css')
+    completed_file = File.join(@test_css_dir, 'double_quotes_no_path.css.scss')
+
+    system("#{@bash_script} img test #{test_file}")
+    actual = File.read(completed_file)
+    expect(actual.delete!("\n")).to eq(expected_content)
+  end
+
   it "should generate the correct syntax if missing quotes and has a relative pathing" do
     expected_content = 'div.button span {'
     expected_content += 'background-image: asset-url("test/uniform/sprite.png");'
