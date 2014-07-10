@@ -4,7 +4,7 @@ describe "Sassify" do
 
   before(:all) do
     @test_css_dir = File.join(File.dirname(__FILE__), '..', 'support', 'test_css_files')
-    @bash_script = File.join(File.dirname(__FILE__), '..', '..', 'lib', 'sassify.sh')
+    @bash_script = File.join(File.dirname(__FILE__), '..', '..', 'lib', 'sassify')
   end
 
   after(:each) do
