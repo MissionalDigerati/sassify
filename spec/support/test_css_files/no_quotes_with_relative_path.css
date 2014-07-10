@@ -1,0 +1,6 @@
+div.button span {
+background-image: url(../img/uniform/sprite.png);
+}
+div.button span.tester {
+background-image: url(../../img/uniform/tester.png);
+}
